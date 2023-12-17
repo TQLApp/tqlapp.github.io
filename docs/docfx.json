@@ -1,18 +1,4 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "src": "../src",
-          "files": [
-            "Tql.Abstractions/bin/Release/net8.0-windows/Tql.Abstractions.dll",
-            "Tql.Utilities/bin/Release/net8.0-windows/Tql.Utilities.dll"
-          ]
-        }
-      ],
-      "dest": "API"
-    }
-  ],
   "rules": {
     "InvalidAssemblyReference": "info"
   },
@@ -37,7 +23,7 @@
       "_appLogoPath": "Images/Logo.svg",
       "_appFaviconPath": "Images/favicon.ico",
       "_disableContribution": true,
-      "_enableSearch": true,
+      "_enableSearch": false,
       "pdf": false
     }
   }
