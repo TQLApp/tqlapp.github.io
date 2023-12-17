@@ -30,6 +30,7 @@ _layout: landing
 .jumbotron .download a {
     color: white;
     background-color: #4CAF50;
+    border: solid 0.5px #224e24;
     border-radius: 0.3em;
     padding: 0.6em 0.8em;
     text-decoration: none;
