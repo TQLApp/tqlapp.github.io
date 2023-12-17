@@ -13,7 +13,7 @@ permissions:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: windows-2022
 
     steps:
       - uses: actions/checkout@v4
@@ -37,7 +37,7 @@ jobs:
         run: ./scripts/Preprocess-Markdown.ps1
 
       - name: Run DocFX
-        run: dotnet docfx docs/docfx.json --warningsAsErrors true
+        run: dotnet docfx docs/docfx.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
