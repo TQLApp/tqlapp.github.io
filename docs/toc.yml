@@ -1,2 +1,8 @@
-- name: Dev Documentation
+- name: Home
+  href: /
+- name: Getting Started
+  href: https://github.com/TQLApp/TQL/wiki/Getting-started
+- name: Wiki
+  href: https://github.com/TQLApp/TQL/wiki
+- name: Plugin Development
   href: /TQL/
