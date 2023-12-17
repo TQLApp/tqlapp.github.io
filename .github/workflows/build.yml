@@ -1,0 +1,63 @@
+name: Update GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup dotnet 8.0.x
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-v2-${{ hashFiles('**/packages.lock.json') }}
+
+      - name: Restore dotnet tools
+        run: dotnet tool restore
+
+      - name: Preprocess DocFX Markdown Files
+        shell: pwsh
+        run: ./scripts/Preprocess-Markdown.ps1
+
+      - name: Run DocFX
+        run: dotnet docfx docs/docfx.json --warningsAsErrors true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload DocFX Pages Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "docs/_site"
+
+  deploy-pages:
+    needs: build
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    name: Deploy pages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

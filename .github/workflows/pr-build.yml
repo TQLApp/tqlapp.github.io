@@ -1,0 +1,39 @@
+name: PR build
+
+on: pull_request
+
+jobs:
+  pr-build:
+    name: PR build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup dotnet 8.0.x
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 8.0.x
+
+      - uses: actions/cache@v3
+        id: cache
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-v2-${{ hashFiles('**/packages.lock.json') }}
+
+      - name: Restore dotnet tools
+        run: dotnet tool restore
+
+      - name: Validate prettier
+        run: ./runprettier.bat
+
+      - name: Check for changes by prettier
+        shell: pwsh
+        run: ./scripts/Uncommitted-changes.ps1 -Tool runprettier.bat
+
+      - name: Preprocess DocFX Markdown Files
+        shell: pwsh
+        run: ./scripts/Preprocess-Markdown.ps1
+
+      - name: Run DocFX
+        run: dotnet docfx docs/docfx.json --warningsAsErrors true

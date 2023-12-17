@@ -1,0 +1,147 @@
+{
+  "main": {
+    "id": "5c8820b21a2b1f28",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f9909e91e6ee28e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95f240ec4e879728",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "36ff7ab55e960392",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd016ceee5ac27e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5efc55b6c4aa7770",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f4ca3eb1d226da39",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "confli",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "69d9c2a461987f1d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "503df2a62e067253",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2785b4bc7da663a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba7713578101fdb9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7193bb95599efb55",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4055a06edb1f84b3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c1db616454f1c971",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open snel wisselen": false,
+      "graph:Open grafiek weergave": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open de notitie van vandaag": false,
+      "templates:Sjabloon invoegen": false,
+      "command-palette:Open opdrachtenpaneel": false
+    }
+  },
+  "active": "95f240ec4e879728",
+  "lastOpenFiles": [
+    "Documentation/Publishing-plugins.md",
+    "Documentation/Create-a-plugin.md"
+  ]
+}
