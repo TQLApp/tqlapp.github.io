@@ -13,8 +13,11 @@
   }
 }
 
-form.icons div.dropdown {
-  display: none;
+form.icons div.dropdown,
+#toc,
+.toc-offcanvas,
+.actionbar {
+  display: none !important;
 }
 
 article {
