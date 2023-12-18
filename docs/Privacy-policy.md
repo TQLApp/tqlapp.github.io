@@ -5,7 +5,8 @@ This document describes what data we collect and how we use this.
 This document covers the TQL app that you can download from GitHub, verified
 plugins and the TQLApp GitHub organization. Verified plugins can be identified
 in the plugin manager embedded in the app. These have a label with the text
-"Verified". Other plugins are covered by privacy policies of the respective owners.
+"Verified". Other plugins are covered by privacy policies of the respective
+owners.
 
 ## What data is collected
 
@@ -44,17 +45,17 @@ for information on how this data is handled.
 
 ### Data accessed by APIs
 
-TQL has access to a wide range of APIs through plugins. The data retrieved
-using these APIs never becomes available to the TQL team. This data never leaves
-your device except when you make use of the backup and synchronization feature.
-In that case, the data will be stored in the account you configure.
+TQL has access to a wide range of APIs through plugins. The data retrieved using
+these APIs never becomes available to the TQL team. This data never leaves your
+device except when you make use of the backup and synchronization feature. In
+that case, the data will be stored in the account you configure.
 
 ### Google Drive data
 
-TQL has an optional backup and synchronization feature that allows you to
-backup your data into Google Drive. When you use this feature, a backup of your
-search history and configuration is stored in Google Drive. TQL can only access
-this data, and no other data in your Google Drive account. The TQL team never gets
+TQL has an optional backup and synchronization feature that allows you to backup
+your data into Google Drive. When you use this feature, a backup of your search
+history and configuration is stored in Google Drive. TQL can only access this
+data, and no other data in your Google Drive account. The TQL team never gets
 access to any data in your Google Drive account.
 
 ### Other data
