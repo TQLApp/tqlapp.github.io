@@ -136,4 +136,4 @@ Email us at: tqlapp@tqlapp.dev
 
 - 16 December 2023: First version.
 - 18 December 2023: Added explicit wording around access to data stored in
-  accounts the user sets up in the app.
+  accounts the user sets up in the app, and around third party plugins.
