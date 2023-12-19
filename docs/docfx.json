@@ -21,7 +21,8 @@
       "_appName": "Techie's Quick Launcher",
       "_appTitle": "Techie's Quick Launcher",
       "_appLogoPath": "Images/Logo.svg",
-      "_appFaviconPath": "Images/favicon.ico",
+      "_appFaviconPath": "Images/Logo.png",
+      "_appFooter": "<span>Made with <a href=\"https://dotnet.github.io/docfx\">docfx</a> | <a href=\"/Privacy-policy.html\">Privacy Policy</a></span>",
       "_disableContribution": true,
       "_enableSearch": false,
       "pdf": false
