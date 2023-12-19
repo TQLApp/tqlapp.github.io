@@ -22,7 +22,7 @@
       "_appTitle": "Techie's Quick Launcher",
       "_appLogoPath": "Images/Logo.svg",
       "_appFaviconPath": "Images/Logo.png",
-      "_appFooter": "<span>Made with <a href=\"https://dotnet.github.io/docfx\">docfx</a> | <a href=\"/Privacy-policy.html\">Privacy Policy</a></span>",
+      "_appFooter": "<span>Made with <a href=\"https://dotnet.github.io/docfx\">docfx</a> | <a href=\"/Privacy-policy.html\">Privacy Policy</a> | <a href=\"/Terms-of-service.html\">Terms of Service</a></span>",
       "_disableContribution": true,
       "_enableSearch": false,
       "pdf": false
